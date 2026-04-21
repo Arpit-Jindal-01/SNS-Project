@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: sns-studio
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run web_app.py --server.address=0.0.0.0 --server.port=$PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.13.7
+      - key: GEMINI_MODEL
+        value: gemini-2.0-flash
+      - key: OPENAI_MODEL
+        value: gpt-4o-mini
+      - key: GROQ_MODEL
+        value: llama-3.3-70b-versatile

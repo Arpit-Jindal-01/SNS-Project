@@ -1,0 +1,38 @@
+# Virtual Environment
+.venv/
+venv/
+env/
+
+# Build files
+build/
+dist/
+*.egg-info/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# PyInstaller
+*.spec
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# macOS
+.DS_Store
+*.app
+
+# Environment files
+.env
+.env.local
+*.log
+
+# Test results
+.pytest_cache/
+.coverage
+htmlcov/
